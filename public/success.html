@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Data Saved Successfully!</h1>
+
+        <h3>User Details</h3>
+
+        <p><b>Username:</b> <span id="showUsername"></span></p>
+
+        <p><b>Email:</b> <span id="showEmail"></span></p>
+
+        <p><b>Date:</b> <span id="showDate"></span></p>
+
+        <p><b>Age:</b> <span id="showAge"></span></p>
+
+    </div>
+
+    <script>
+
+        document.getElementById("showUsername").innerHTML =
+            localStorage.getItem("username");
+
+        document.getElementById("showEmail").innerHTML =
+            localStorage.getItem("email");
+
+        document.getElementById("showDate").innerHTML =
+            localStorage.getItem("date");
+
+        document.getElementById("showAge").innerHTML =
+            localStorage.getItem("age");
+
+    </script>
+
+</body>
+</html>
